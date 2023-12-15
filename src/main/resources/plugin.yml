@@ -1,0 +1,4 @@
+name: Player-Grade
+version: '${version}'
+main: moe.nmkmn.player_grade.PlayerGrade
+api-version: '1.20'
