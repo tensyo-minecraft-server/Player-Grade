@@ -1,0 +1,48 @@
+General:
+  language: 'en-US'
+  ignore_blocks:
+    - SLIME_BLOCK
+    - TORCH
+
+Database:
+  type: sqlite
+  sqlite:
+    file: "PlayerGrade.db"
+  mysql:
+    host: localhost
+    port: 3306
+    user: root
+    password: minecraft
+    database: PlayerGrade
+    launch_options: "?rewriteBatchedStatements=true&useSSL=false&serverTimezone=UTC"
+    max_connections: 8
+    max_lifetime: 25
+
+Grades:
+  - iron:
+    name: "Iron"
+    prefix: "Iron"
+    condition:
+      scoreboard:
+        - "kills:500"
+      votifier: 10
+    rewards:
+      balance: 5000
+  - bronze:
+    name: "Bronze"
+    prefix: "Bronze"
+    rewards:
+      balance: 10000
+      items:
+        - diamond:
+            amount: 16
+            id: DIAMOND
+            name: "&b&lPrecious Stone"
+            lore:
+              - "&fSparkling, likely to sell for a high price."
+            nbt: "{CustomModelData:1}"
+
+Discord:
+  enabled: false
+  token: ''
+  guild: ''
