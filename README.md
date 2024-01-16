@@ -5,7 +5,7 @@
 > **Currently under development.**
 
 # What is this?
-Add a rank system to Minecraft.
+Add a rank system to Minecraft.  
 It is designed to allow for a variety of customizations.  
 This is a plugin for this server and we do not support it.  
 
